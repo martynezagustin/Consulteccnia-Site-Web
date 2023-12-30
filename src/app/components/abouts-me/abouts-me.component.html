@@ -1,0 +1,24 @@
+<section class="about-me">
+  <div class="container-border">
+    <div class="border-h1"></div>
+    <h1 class="text-center m-2">ACERCA DE NOSOTROS</h1>
+    <div class="border-h1"></div>
+  </div>
+  <div class="about-me__container">
+    <div class="about-me__container-member" *ngFor="let member of members">
+      <img src="{{ member.img }}" class="mb-2 mt-4" width="100" alt="" />
+      <h2 class="text-center p-1 about-me__container-member__h2">
+        {{ member.name }} {{ member.lastname }}
+      </h2>
+      <p>{{ member.description }}</p>
+      <h2 class="about-me__container-member__h2-certifications">
+        <strong>CERTIFICACIONES</strong>
+      </h2>
+      <div>
+        <ul *ngFor="let certification of member.certifications">
+          <li><a href={{certification.anchorCertificado}} target="_blank">{{certification.nameCertificado}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

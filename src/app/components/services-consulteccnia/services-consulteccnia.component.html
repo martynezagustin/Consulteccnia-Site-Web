@@ -1,0 +1,25 @@
+<section class="service-section" data-aos="fade" id="services-consulteccnia">
+  <h2 class="service-section__h2 text-center"><b>SERVICIOS</b></h2>
+  <hr />
+  <div class="services-div">
+    <div *ngFor="let service of services">
+      <!--Objetos de array par-->
+      <div
+        class="services-div__service-container text-center mb-5 backgrounds-services"
+        data-aos="flip-up"
+      >
+        <img src="{{ service.img }}" width="50" alt="" />
+        <h3><b>{{ service.name }}</b></h3>
+        <p>{{ service.description }}</p>
+        <button class="btn services-div__btn-reserve"><i class="fi fi-sr-message-arrow-up-right m-1"></i>RESERVAR</button>
+      </div>
+    </div>
+  </div>
+  <video
+    autoplay="autoplay"
+    muted
+    loop
+    src="../../../assets/imgs/services/video.mp4"
+    class="background-video"
+  ></video>
+</section>

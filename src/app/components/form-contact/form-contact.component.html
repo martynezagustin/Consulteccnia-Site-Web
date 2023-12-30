@@ -1,0 +1,92 @@
+<hr />
+<section class="form-section mt-5" data-aos="fade">
+  <div class="form-section__div">
+    <div class="form-section__div__div-decoration">
+      <img src="../../../assets/imgs/email.webp" width="100" class="form-section__div__div-decoration__img" alt="">
+      <h2 class="text-center form-section__div__div-decoration__h2">
+        <strong>PONTE EN CONTACTO CON NOSOTROS</strong>
+      </h2>
+      <p>Y comienza tu camino de desarrollo digital en el <strong>triple impacto</strong>.</p>
+    </div>
+    <div class="form-section__div__div-form">
+      <form
+        [formGroup]="formularioContacto"
+        (ngSubmit)="onSubmit()"
+      >
+        <label for="name" class="form-label">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="ej. Juan"
+          formControlName="name"
+        />
+        <!--Error-->
+        <div
+          [hidden]="name?.pristine || name?.valid"
+          class="alert alert-danger mt-2"
+        >
+          <div *ngIf="name?.errors?.['minlength']">
+            El nombre debe ser al menos de 3 caracteres.
+          </div>
+          <div *ngIf="name?.errors?.['required']">
+            El nombre es obligatorio.
+          </div>
+        </div>
+        <label for="lastname" class="form-label">Apellido</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastname"
+          name="lastname"
+          placeholder="ej. Pérez"
+          formControlName="lastname"
+        />
+        <!--Error-->
+        <div
+          [hidden]="lastname?.pristine || lastname?.valid"
+          class="alert alert-danger mt-2"
+        >
+          <div *ngIf="lastname?.errors?.['minlength']">
+            El apellido debe ser al menos de 2 caracteres.
+          </div>
+          <div *ngIf="lastname?.errors?.['required']">
+            El apellido es obligatorio.
+          </div>
+        </div>
+
+        <!--Textarea-->
+        <label for="mensaje" class="form-label">Tu mensaje:</label>
+        <textarea
+          class="form-control"
+          id="message"
+          name="message"
+          placeholder="ej. Necesito un presupuesto para asesoría en growth hacking..."
+          formControlName="message"
+        ></textarea>
+        <!--Error-->
+        <div [hidden]="message?.pristine || message?.valid">
+          <div
+            *ngIf="message?.errors?.['required']"
+            class="alert mt-2 alert-danger"
+          >
+            <p>Es obligatorio rellenar el campo.</p>
+          </div>
+          <div
+            *ngIf="message?.errors?.['minlength']"
+            class="alert mt-2 alert-danger"
+          >
+            <p>Se necesitan minimo 15 caracteres para enviar el mensaje.</p>
+          </div>
+        </div>
+        <input
+          type="submit"
+          value="Enviar"
+          class="btn btn-primary btn-send mt-3"
+          [disabled]="formularioContacto.invalid"
+        />
+      </form>
+    </div>
+  </div>
+</section>

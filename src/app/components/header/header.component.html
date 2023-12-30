@@ -1,0 +1,44 @@
+<div class="superior-div-header" data-aos="fade">
+  <div class="rrss p-2">
+    <span class="p-2">REDES SOCIALES</span>
+    <div class="rrss__div"  *ngFor="let red of rrss">
+      <a href={{red.anchor}} target="_blank">
+        <img src="{{ red.img }}" alt="{{ red.name }}" class="rrss_icon p-1" width="30" />
+      </a>
+    </div>
+  </div>
+  <div class="superior-div-header__date">
+    <span id="date" class="p-2">{{date}}</span>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary header-component">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/imgs/new-logo-png.png" width="25" alt=""
+    /></a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <li
+          *ngFor="let route of routes"
+          class="nav-link"
+          [routerLink]="[route.path]"
+        >
+          {{ route.title }}
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>

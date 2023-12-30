@@ -1,0 +1,35 @@
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+.h2-profits{
+    color: #FFDE59;
+    font-size: 3rem;
+}
+i{
+    font-size: 2rem;
+}
+.div-profits{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    grid-gap: 2px;
+    grid-template-rows: auto;
+}
+.container-border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border-h2{
+    border: 1px solid #FFDE59;
+    width: 30%;
+}
+.profit{
+    background: linear-gradient(to right,  #FFDE59, #FFDE10);
+    padding: 0.7rem;
+}
+.profit:hover{
+    background: linear-gradient(to right,  #FFDC10, #FFDE10);
+    transition: background 1000ms ease;
+}

@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 15px; /* Ancho de la barra */
+  }
+  
+  /* Estilo para el riel de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background-color: rgb(65,65,65); /* Color del riel */
+}
+
+/* Estilo para el mango o "pulgarcito" de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: #ffde59; /* Color del mango */
+    border-left: 1px solid gray;
+    box-shadow: 0px 0px 5px 1px #7e6d08;
+    border-radius: 3px;
+    transform: scale(0deg);
+    transition: border-radius 400ms ease-in;
+  }
+  
+  /* Cambiar el color del mango cuando pasa el ratón sobre él */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ffdd10;
+    border-radius: 2px;
+    transition: 500ms;
+  }
+  

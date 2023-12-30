@@ -1,0 +1,58 @@
+.header-component{
+    background: linear-gradient(rgb(20,20,20), rgb(40,40,40))!important;
+    border-top: 1px solid #FFDE59;
+    border-radius: 4px;
+    width: 100%;
+}
+.superior-div-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#date{
+    color: #FFDE59;
+}
+.rrss{
+    display: flex;
+    align-items: center;
+    color: #FFDE59;
+}
+.rrss_icon{
+    border-radius: 50px;
+    transform: rotate(0deg);
+    transition: transform 200ms ease-in;
+}
+.rrss_icon:hover{
+    transform: scale(1.2, 1.2);
+    transition: 200ms;
+}
+.navbar-toggler{
+    background-color: #FFDE59!important;
+}
+.nav-link{
+    color: #FFDE59;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0.2rem;
+    transform: scale(1.01,1.01);
+    transition: transform 0.4s ease;
+}
+.nav-link:hover{
+    background-color: #FFDE59;
+    color: black;
+    transition: 500ms;
+    transform: scale(1.09,1.03);
+}
+.active{
+    color: whitesmoke!important;
+    font-weight: 900!important;
+}
+.navbar-brand{
+    color: whitesmoke;
+    transform: scale(1,1);
+    transition: transform 400ms ease-in;
+}
+.navbar-brand:hover{
+    transform: scale(1.05,1.05);
+    transition: 400ms;
+}

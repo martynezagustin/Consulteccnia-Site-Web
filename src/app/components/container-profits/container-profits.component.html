@@ -1,0 +1,16 @@
+<div class="father-profit">
+  <div class="container-border">
+    <div class="border-h2"></div>
+    <h2 class="h2-profits text-center m-2 mt-4"><b>LAS RAZONES DE ELEGIR CONSULTECCNIA</b></h2>
+    <div class="border-h2"></div>
+  </div>
+  <div class="div-profits mt-3">
+    <div class="profit" *ngFor="let item of profits" data-aos="fade">
+      <div class="text-center">
+        <i [class]="item.icon"></i>
+      </div>
+      <h3 class="text-center">{{ item.name }}</h3>
+      <p class="text-center">{{ item.description }}</p>
+    </div>
+  </div>
+</div>

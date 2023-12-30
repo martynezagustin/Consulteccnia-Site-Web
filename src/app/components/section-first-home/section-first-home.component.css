@@ -1,0 +1,48 @@
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
+.father-section-home{
+    display: flex;
+    justify-content: center;
+}
+a:hover{
+    color: black;
+}
+.background-video{
+    right: 0;
+    position: absolute;
+    filter: blur(0.2px);
+    object-fit: cover;
+    opacity: 0.5;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+}
+.section-home{
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    top: 0px;
+    position: relative;
+    left: 0px;
+}
+.section-home-container__button{
+    background-color: #FFDE59;
+    font-size: 1.7rem;
+}
+.section-home-container__button:hover{
+    background-color:#FFDE19;
+}
+.section-home__div{
+    padding: 1.3rem;
+}
+.section-home__div h1{
+    color: #FFDE59;
+    font-weight: bolder;
+}
+.section-home__div__img__img{
+    width: 100%;
+}
+.section-home__div h3{
+    font-size: 1.9rem;
+    color: whitesmoke;
+}

@@ -1,0 +1,34 @@
+.div-digitalizar{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-top: 3rem;
+}
+.div-digitalizar__div-img__img{
+    width: 100%;
+    border-radius: 15px;
+}
+.icon-sustentable__div{
+    margin: 10px;
+}
+.icon-sustentable__div__i{
+    font-size: 4rem;
+    color: #FFDE59;
+}
+.div-digitalizar__div-text__h2{
+    color: #FFDE59;
+}
+.div-digitalizar__div-img{
+    width: 50%;
+}
+.div-digitalizar__div-text{
+    width: 50%;
+    padding: 1rem;
+}
+.div-digitalizar__div-text__p{
+    font-size: 1.2rem;
+    color: #FFDE59;
+    padding: 10px;
+    border-left: 1px solid #FFDE59;
+    border-right: 1px solid #FFDE59;
+}
