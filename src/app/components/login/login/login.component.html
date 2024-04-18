@@ -1,0 +1,21 @@
+<div class="login-father">
+    <div class="form-class">
+        <h2>Iniciar sesión</h2>
+        <form  [formGroup]="formLogin" (ngSubmit)="loginForm()">
+            <label for="usernameEnterprise" class="form-label">Nombre de usuario de empresa</label>
+            <input type="text" name="usernameEnterprise" class="form-control" id="usernameEnterprise" formControlName="usernameEnterprise">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" name="password" class="form-control" id="password" formControlName="password">
+            <input type="submit" class="mt-5" class="btn-submit" value="Ingresar">
+        </form>
+        <!--Error-->
+        <div *ngIf="error" class="alert alert-danger mt-2 mw-100"
+        >
+        <span>{{error}}</span>
+        </div>
+    </div>
+    <div class="decoration">
+        <h2>BIENVENIDO A CONSUL+</h2>
+        <p>El programa que integra todo en uno.</p>
+    </div>
+</div>

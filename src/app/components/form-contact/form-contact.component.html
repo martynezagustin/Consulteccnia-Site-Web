@@ -2,17 +2,22 @@
 <section class="form-section mt-5" data-aos="fade">
   <div class="form-section__div">
     <div class="form-section__div__div-decoration">
-      <img src="../../../assets/imgs/email.webp" width="100" class="form-section__div__div-decoration__img" alt="">
+      <img
+        src="../../../assets/imgs/email.webp"
+        width="100"
+        class="form-section__div__div-decoration__img"
+        alt=""
+      />
       <h2 class="text-center form-section__div__div-decoration__h2">
         <strong>PONTE EN CONTACTO CON NOSOTROS</strong>
       </h2>
-      <p>Y comienza tu camino de desarrollo digital en el <strong>triple impacto</strong>.</p>
+      <p>
+        Y comienza tu camino de desarrollo digital en el
+        <strong>triple impacto</strong>.
+      </p>
     </div>
     <div class="form-section__div__div-form">
-      <form
-        [formGroup]="formularioContacto"
-        (ngSubmit)="onSubmit()"
-      >
+      <form [formGroup]="formularioContacto" (ngSubmit)="onSubmit()">
         <label for="name" class="form-label">Nombre</label>
         <input
           type="text"
@@ -53,6 +58,29 @@
           </div>
           <div *ngIf="lastname?.errors?.['required']">
             El apellido es obligatorio.
+          </div>
+        </div>
+
+        <!--Email campo-->
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input
+          type="text"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="ej. juanperez@gmail.com"
+          formControlName="email"
+        />
+        <!--Error-->
+        <div
+          [hidden]="email?.pristine || email?.valid"
+          class="alert alert-danger mt-2"
+        >
+          <div *ngIf="email?.errors?.['email']">
+            Introduce un e-mail válido.
+          </div>
+          <div *ngIf="email?.errors?.['required']">
+            El e-mail es obligatorio.
           </div>
         </div>
 

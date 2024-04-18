@@ -3,6 +3,8 @@
     align-items: center;
     padding: 15px;
     margin-top: 3rem;
+    background: linear-gradient(50deg, rgb(30,30,30), rgb(15,15,15), #443b19, rgb(60,60,60));
+    animation: gradientAnimation 4s ease infinite;
 }
 .div-digitalizar__div-img__img{
     width: 100%;
@@ -14,7 +16,26 @@
 .icon-sustentable__div__i{
     font-size: 4rem;
     color: #FFDE59;
+    animation: animationIcon 5s ease-in infinite;
 }
+@keyframes animationIcon {
+    0%{
+        color: #FFDE59;
+    }
+    25%{
+        color: #EEAB10;
+    }
+    50%{
+        color: #FFAB20;
+    }
+    75%{
+        color: rgb(30,255,90);
+    }
+    100%{
+        color: #FFDE59;
+    }
+}
+
 .div-digitalizar__div-text__h2{
     color: #FFDE59;
 }
@@ -31,4 +52,15 @@
     padding: 10px;
     border-left: 1px solid #FFDE59;
     border-right: 1px solid #FFDE59;
+}
+@media screen and (max-width:768px){
+    .div-digitalizar{
+        flex-direction: column;
+    }
+    .div-digitalizar__div-img{
+        width: 100%;
+    }
+    .div-digitalizar__div-text{
+        width: 100%;
+    }
 }

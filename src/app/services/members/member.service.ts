@@ -7,19 +7,16 @@ import { Certificado } from 'src/app/interfaces/certificado';
 export class MemberService {
   public members: any[] = []
   constructor() { }
-  setMembers(name: String, lastname: String, title: String, description: String, img:string, certifications: Array<Certificado>) {
-    const member = {
-      name: name,
-      lastname: lastname,
-      title: title,
-      description: description,
-      img:img,
-      certifications: certifications
-    }
+  setMembers(name: string, lastname: string, title: string, description: string, img: string, certifications: Array<Certificado>, profileLinkedin: string) {
+    const member = new Member(name, lastname, title, description, img, certifications, profileLinkedin)
     this.members.push(member)
     return member
   }
   getMembers() {
     return this.members
   }
+}
+
+export class Member {
+  constructor(public name: string, public lastname: string, public title: string, public description: string, public img: string, public certifications: Array<Certificado>, public profileLinkedin: string) { }
 }

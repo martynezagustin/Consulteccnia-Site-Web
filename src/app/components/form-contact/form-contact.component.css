@@ -46,3 +46,8 @@ hr{
     color: white!important;
     border: none;
 }
+@media screen and (max-width:768px) {
+    .form-section__div{
+        flex-direction: column;
+    }    
+}

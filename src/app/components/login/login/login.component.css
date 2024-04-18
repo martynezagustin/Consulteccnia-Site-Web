@@ -1,0 +1,25 @@
+.login-father{
+    display: flex;
+    height: 60vh;
+}
+.form-class{
+    width: 100%;
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFDE59;
+}
+.decoration{
+    width: 100%;
+    padding: 2rem;
+    background-color: #FFDE59;
+    border-left: 1px solid white;
+}
+.btn-submit{
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0.5rem;
+    background-color: #FFDE59;
+    border: none;
+}

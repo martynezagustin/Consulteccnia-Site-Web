@@ -1,0 +1,15 @@
+<div class="dashboard__div">
+    <div class="navbar__div">
+        <app-navbar></app-navbar>
+    </div>
+    <div class="handle__div">
+        <div class="greeting">
+            <h2 class="welcome__h2">{{greeting}}, <strong>{{userData.nameEnterprise}}.</strong></h2>
+            <span class="username__span">{{userData.usernameEnterprise}}</span>
+            <hr>
+        </div>
+        <div class="main-content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

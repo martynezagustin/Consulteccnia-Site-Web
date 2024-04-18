@@ -1,0 +1,12 @@
+.div-footer{
+    background: linear-gradient(60deg, rgb(40,40,40), rgb(20,20,20), rgb(60,60,60));
+    color: #FFDE59;
+    align-items: center;
+    justify-content: center;
+}
+.div-footer__ul{
+    list-style-type: none;
+}
+.div-footer__ul > li > a{
+    color: #FFDE59;
+}

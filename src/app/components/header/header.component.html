@@ -1,6 +1,6 @@
-<div class="superior-div-header" data-aos="fade">
+<div class="superior-div-header" data-aos="fade" [ngClass]="{'borderBottom' : !mostrarComponent}">
   <div class="rrss p-2">
-    <span class="p-2">REDES SOCIALES</span>
+    <span class="p-2" [ngClass]="{'dashboard__color': !mostrarComponent}">REDES SOCIALES</span>
     <div class="rrss__div"  *ngFor="let red of rrss">
       <a href={{red.anchor}} target="_blank">
         <img src="{{ red.img }}" alt="{{ red.name }}" class="rrss_icon p-1" width="30" />
@@ -8,11 +8,11 @@
     </div>
   </div>
   <div class="superior-div-header__date">
-    <span id="date" class="p-2">{{date}}</span>
+    <span id="date" class="p-2" [ngClass]="{'dashboard__color': !mostrarComponent}">{{date}}</span>
   </div>
 </div>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary header-component">
+<nav class="navbar navbar-expand-lg bg-body-tertiary header-component" *ngIf="mostrarComponent">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="./assets/imgs/new-logo-png.png" width="25" alt=""

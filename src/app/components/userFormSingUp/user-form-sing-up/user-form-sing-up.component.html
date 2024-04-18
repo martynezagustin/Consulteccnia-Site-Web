@@ -1,0 +1,60 @@
+<div class="d-flex flex-column align-items-center div-register-consul">
+  <h1>CREAR CUENTA EN CONSUL+</h1>
+  <form [formGroup]="formSingUp" (ngSubmit)="createUser()">
+    <label for="nameEnterprise" class="form-label"
+      >Nombre de tu empresa:</label
+    >
+    <input
+      type="text"
+      formControlName="nameEnterprise"
+      name="nameEnterprise"
+      id="nameEnterprise"
+      class="form-control"
+    />
+    <label for="email" class="form-label">E-mail</label>
+    <input
+      type="email"
+      formControlName="email"
+      name="email"
+      id="email"
+      class="form-control"
+    />
+    <label for="usernameEnterprise" class="form-label"
+      >Nombre de usuario de empresa:</label
+    >
+    <input
+      type="text"
+      formControlName="usernameEnterprise"
+      name="usernameEnterprise"
+      id="usernameEnterprise"
+      class="form-control"
+    />
+        <!--Error-->
+        <div
+        [hidden]="usernameEnterprise?.pristine || usernameEnterprise?.valid"
+        class="alert alert-danger mt-2 mw-100"
+      >
+        <div *ngIf="usernameEnterprise?.errors?.['minlength']">
+          El nombre de usuario debe tener al menos 5 carácteres.
+        </div>
+        <div *ngIf="usernameEnterprise?.errors?.['required']">
+          El nombre es obligatorio.
+        </div>
+      </div>
+    <label for="password" class="form-label">Contraseña</label>
+    <input
+      type="password"
+      formControlName="password"
+      name="password"
+      id="password"
+      class="form-control"
+    />
+    <input [disabled]="!this.formSingUp.valid" type="submit" value="Registrarme" class="btn btn-warning mt-2 btn-submit">
+            <!--Error-->
+            <div *ngIf="error.length > 0" class="alert alert-danger mt-2 mw-100"
+          >
+          <span>{{error}}</span>
+          </div>
+  </form>
+  <p class="mt-2">¿Ya tienes una cuenta? Inicia sesión <a href="/iniciar-sesion">aquí.</a></p>
+</div>

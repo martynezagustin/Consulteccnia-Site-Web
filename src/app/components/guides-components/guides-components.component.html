@@ -1,0 +1,25 @@
+<div class="d-flex flex-column align-items-start m-3">
+  <h2 class="h2__guides p-1 mt-2">Nuestras guías</h2>
+</div>
+<div class="container-fluid d-flex flex-column align-items-center">
+  <div class="row mw-100">
+    <div class="card" *ngFor="let guide of guides">
+      <img src="{{ guide.img }}" class="card-img-top" alt="{{ guide.name }}" />
+      <div class="card-body">
+        <h5 class="card-title">{{ guide.name }}</h5>
+        <h5 class="h5__cost">
+          <strong>{{ guide.cost }}</strong>
+        </h5>
+        <hr />
+        <p class="card-text">{{ guide.description }}</p>
+        <a
+          href="{{ guide.link }}"
+          target="_blank"
+          class="btn btn-primary btn-purchase"
+          download="{{ guide.name }}"
+          >ADQUIRIR</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

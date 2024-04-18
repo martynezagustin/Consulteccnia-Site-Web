@@ -1,13 +1,19 @@
 .header-component{
     background: linear-gradient(rgb(20,20,20), rgb(40,40,40))!important;
     border-top: 1px solid #FFDE59;
-    border-radius: 4px;
     width: 100%;
+    box-shadow: 0px 0px 12px 1px black;
+}
+.borderBottom{
+    background: linear-gradient(190deg, #FFDE59, #FFDE09);
 }
 .superior-div-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.dashboard__color{
+    color: rgb(40,40,40)!important;
 }
 #date{
     color: #FFDE59;

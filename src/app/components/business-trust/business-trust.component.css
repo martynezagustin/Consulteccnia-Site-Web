@@ -1,0 +1,22 @@
+.business_a{
+    background: linear-gradient(to right, #FFDE59, #FFDD10);
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1.4);
+    transition: transform 500ms ease-in;
+}
+.business_h2{
+    color: #FFDE59;
+}
+hr{
+    color: whitesmoke;
+}
+.business_div{
+    display: flex;
+    border-radius: 5px;
+}
+.business_a:hover{
+    background: linear-gradient(to right, whitesmoke, rgb(220,220,220));
+    transform: scale(1.45);
+    transition: 500ms;
+}

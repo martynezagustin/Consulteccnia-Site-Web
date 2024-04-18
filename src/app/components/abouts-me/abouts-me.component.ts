@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MemberService } from 'src/app/services/members/member.service';
+import { Member, MemberService } from 'src/app/services/members/member.service';
 
 @Component({
   selector: 'abouts-me',
@@ -7,7 +7,7 @@ import { MemberService } from 'src/app/services/members/member.service';
   styleUrls: ['./abouts-me.component.css']
 })
 export class AboutsMeComponent implements OnInit {
-  members: MemberService[] = []
+  members: Member[] = []
   constructor(private memberService: MemberService) {
   }
   ngOnInit() {
@@ -20,9 +20,17 @@ export class AboutsMeComponent implements OnInit {
       {
         nameCertificado: "Google Analytics Individual Qualification: Google",
         anchorCertificado: "https://skillshop.exceedlms.com/student/award/TVcRqA1C6Tt8Mncxp98iX9fD"
+      },
+      {
+        nameCertificado: "Marketing Digital: Community Manager y Publicidad",
+        anchorCertificado: "https://www.coderhouse.com/certificados/654c9d9ab8a010c4907fe27a?lang=es"
       }
-      ])
+      ], "https://www.linkedin.com/in/agust%C3%ADn-mart%C3%ADnez-medina-773874153/")
       this.memberService.setMembers("Agustín", "Martínez Medina", "Consultor en Mercadotecnia General. Desarrollador Web Front-End", "Agustín Martínez Medina es desarrollador front-end. Aficionado a la evolución de la IA, las nuevas librerías, y las nuevas innovaciones empresariales. Posee conocimientos en muchas areas de gestión empresarial.", "../../../assets/imgs/about-me/agustin.JPG", [
+        {
+          nameCertificado: "Master en JS: Aprender JS, jQuery, Angular, NodeJS",
+          anchorCertificado: "https://www.udemy.com/certificate/UC-659e25e6-4cb3-4101-bcb9-ded98ca0d40c/"
+        },
         {
           nameCertificado: "Máster en Marketing Digital y Analítica Web",
           anchorCertificado: "https://certificados.neetwork.com/es/verify/91147389636432"
@@ -50,8 +58,12 @@ export class AboutsMeComponent implements OnInit {
         {
           nameCertificado: "Estrategias Online de Marketing",
           anchorCertificado: "https://usuarios.aulafacil.com/validar-certificado/20200507484-c8ddb6"
+        },
+        {
+          nameCertificado: "Fundamentos de Inteligencia Artificial",
+          anchorCertificado: "https://www.coderhouse.com/certificados/65cbba13ba4e821b8c97e6dc?lang=eshttps://www.coderhouse.com/certificados/65cbba13ba4e821b8c97e6dc?lang=es"
         }
-      ])
+      ], "https://www.linkedin.com/in/agust%C3%ADn-mart%C3%ADnez-medina-773874153/")
     } else {
       console.log("Listooo");
 

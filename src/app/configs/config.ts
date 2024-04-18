@@ -4,3 +4,7 @@ export const enviroment = {
         TEMPLATE_ID: "template_b4qy3km"
     }
 }
+
+export const url = {
+    urlApi: "http://localhost:3000"
+}

@@ -1,0 +1,38 @@
+.h2__guides{
+background-color: #FFDE59;
+text-align: start;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-template-rows: auto;
+    grid-gap: 0.5rem;
+    margin: 0%;
+    padding: 0%;
+}
+.card{
+    padding: 0%;
+    border: 3px solid #FFDE59;
+}
+.card-body{
+    background-color: black;
+}
+.card-title, .card-text{
+    color: #FFDE59;
+}
+.h5__cost{
+    color: #00de51;
+}
+hr{
+    opacity: 0.5;
+    color: #FFDE59;
+}
+.btn-purchase{
+    background-color: #FFDE59!important;
+    color: black!important;
+    border: none;
+}
+.btn-purchase:hover{
+    background-color: #FEEE10!important;
+    transition: .2s all;
+}

@@ -6,17 +6,6 @@
 a:hover{
     color: black;
 }
-.background-video{
-    right: 0;
-    position: absolute;
-    filter: blur(0.2px);
-    object-fit: cover;
-    opacity: 0.5;
-    bottom: 0;
-    height: 100%;
-    z-index: -1;
-    width: 100%;
-}
 .section-home{
     background-attachment: fixed;
     background-size: cover;
@@ -44,5 +33,14 @@ a:hover{
 }
 .section-home__div h3{
     font-size: 1.9rem;
+    color: whitesmoke;
+}
+.section-home__div p{
+    color: #FFDE59;
+}
+.section-home__div-span{
+    color: rgb(20,200,90);
+}
+hr{
     color: whitesmoke;
 }

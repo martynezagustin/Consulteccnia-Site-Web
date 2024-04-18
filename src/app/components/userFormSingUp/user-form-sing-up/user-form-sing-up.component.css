@@ -1,0 +1,28 @@
+form{
+    padding: 2rem;
+    border-radius: 15px;
+    width: 75%;
+    background-color: #FFDE59;
+}
+.div-register-consul{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url("../../../../assets/imgs/bg-consul-plus.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    color: #FFDE59;
+}
+label{
+    color: black;
+    margin-top: 5px;
+}
+input[type="email"], [type="text"], [type="password"]{
+    background-color: black;
+    color: #FFDE59;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.btn-submit{
+    background-color: black!important;
+    color: #FFDE59;
+}

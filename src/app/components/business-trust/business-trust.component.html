@@ -1,0 +1,9 @@
+<div class="mb-5" data-aos="fade">
+    <h2 class="text-center business_h2 mb-5">PROYECTOS QUE CONFÍAN EN NOSOTROS</h2>
+    <div class="d-flex flex-column align-items-center">
+        <div *ngFor="let business of listBusiness" class="d-flex business_div flex-column justify-center align-items-center mb-4">
+            <a href={{business.siteWeb}} target="_blank" class="business_a"><img src={{business.img}} alt={{business.name}} width="100"></a>
+        </div>
+    </div>
+    <hr>
+</div>

@@ -1,0 +1,8 @@
+<div class="navbar">
+    <a [routerLink]="['finance']" class="item__dashboard"><i class="fi fi-sr-usd-circle"></i>Finanzas</a>
+    <a [routerLink]="['administrative']" class="item__dashboard"><i class="fi fi-sr-admin-alt"></i>Administrativo</a>
+    <a [routerLink]="['technology']" class="item__dashboard"> <i class="fi fi-sr-interactive"></i>Tecnológico</a>
+    <a [routerLink]="['carbon-footprint']" class="item__dashboard"><i class="fi fi-ss-leaf-heart"></i>Huella de Carbono</a>
+    <a [routerLink]="['institutional']" class="item__dashboard"><i class="fi fi-sr-building"></i>Institucional</a>
+    <a class="btn__logout text-center mt-3"(click)="logout()">Cerrar sesión</a>
+</div>

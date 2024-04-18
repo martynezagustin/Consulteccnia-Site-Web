@@ -14,12 +14,16 @@ export class FormContactComponent {
   get name(){
     return this.formularioContacto.get("name")
   }
+  get email(){
+    return this.formularioContacto.get("email")
+  }
   get lastname(){
     return this.formularioContacto.get("lastname")
   }
   formularioContacto = this.fb.group(
     {
       name: ["", [Validators.required, Validators.minLength(3)]],
+      email: ["", [Validators.required, Validators.email]],
       lastname: ["", [Validators.required, Validators.minLength(3)]],
       message: ["", [Validators.required, Validators.minLength(15)]]
     })
@@ -29,7 +33,8 @@ export class FormContactComponent {
       //el template que se manda por mail
       const formData = {
         to_name: "Consulteccnia",
-        name: this.name?.value,
+        from_name: this.name?.value,
+        reply_to: this.email?.value,
         lastname: this.lastname?.value,
         message: this.message?.value
       }
