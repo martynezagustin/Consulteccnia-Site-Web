@@ -62,3 +62,13 @@
     transform: scale(1.05,1.05);
     transition: 400ms;
 }
+
+@media screen and (max-width: 992px) {
+    .nav-link{
+        border-radius: 0px;
+        transform: none;
+    }
+    .nav-link:hover{
+        transform: none;
+    }
+}

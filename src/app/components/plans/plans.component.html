@@ -1,8 +1,8 @@
 <h2 class="text-center m-4 plans-h2"> NUESTROS PLANES PARA EMPRESAS</h2>
 <p class="text-center plans-p">Ofrecemos planes de asesoramiento integral en función de las condiciones y estado de tu empresa, para potenciarla lo máximo posible.</p>
 <div class="container text-center">
-    <div class="row align-items-start">
-      <div class="col plan-col p-2" *ngFor="let plan of plans" data-aos="flip-up">
+    <div class="row align-items-start content-items">
+      <div class="col plan-col p-2" *ngFor="let plan of plans" data-aos="fade">
         <i class={{plan.icon}}></i>
         <h2 class="mt-2 plan-col__h2">{{plan.name}}</h2>
         <span class="plan-col__span">{{plan.destinatary}}</span>

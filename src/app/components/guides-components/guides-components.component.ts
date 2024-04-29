@@ -7,11 +7,13 @@ import { Guide, GuidesService } from 'src/app/services/guides/guides.service';
   styleUrls: ['./guides-components.component.css']
 })
 export class GuidesComponentsComponent {
-    public guides: Guide [] = []
-    constructor(private guidesService: GuidesService){
-    }
-    ngOnInit(){
-      this.guides = this.guidesService.getGuide()
+  public guides: Guide[] = []
+  constructor(private guidesService: GuidesService) {
+  }
+  ngOnInit() {
+    this.guides = this.guidesService.getGuide()
+    if(this.guides.length === 0){
       this.guidesService.setGuide("DESCUBRE COMO DIGITALIZAR TU EMPRESA SUSTENTABLE", "¿Deseas innovar tu empresa sustentable con las nuevas tecnologías? Esta guía te cerciora con todo lo que necesitas saber.", "GRATIS", "https://drive.google.com/file/d/1OJv9o1RvAxGvgWHyt_tEVg2Q-9bht3vj/view?usp=drive_link", "../../assets/imgs/guides/guia-para-digitalizar-tu-empresa-sustentable.jpg")
     }
+  }
 }

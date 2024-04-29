@@ -1,5 +1,6 @@
 @import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
-.service-section{
+
+.service-section {
     top: 0px;
     position: relative;
     left: 0px;
@@ -7,13 +8,15 @@
     border-right: 5px solid #FFDE59;
     margin: 2rem;
 }
-.service-section__h2{
+
+.service-section__h2 {
     color: black;
-    background:linear-gradient(180deg, white, rgb(240,240,240));
+    background: linear-gradient(180deg, white, rgb(240, 240, 240));
     border-bottom: 1px solid black;
     font-size: 2rem;
 }
-.background-video{
+
+.background-video {
     right: 0;
     position: absolute;
     filter: blur(0.2px);
@@ -24,31 +27,62 @@
     z-index: -1;
     width: 100%;
 }
-h3{
+
+h3 {
     font-size: 1.6rem;
 }
-p{
+
+p {
     font-size: 1.1rem;
 }
-.backgrounds-services{
+
+.backgrounds-services {
     color: white
 }
-.services-div{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(255px,1fr));
-    grid-template-rows: auto;
+
+.services-div {
+    display: flex;
     padding: 0.2rem;
     grid-gap: 3px;
 }
-.services-div__btn-reserve{
+
+.services-div__btn-reserve {
     background-color: #FFDE59;
 }
-.services-div__btn-reserve:hover{
+
+.services-div__btn-reserve:hover {
     background-color: black;
 }
-.services-div__service-container{
+
+.services-div__service-container {
     padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.services-div__service-container:hover{
-    transform: scale(1.03,1.03);
+
+.services-div__service-container:hover {
+    transform: scale(1.03, 1.03);
+}
+@media screen and (max-width: 992px) {
+    .services-div__service-container{
+        width: 100%;
+    }
+    .services-div{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 350px) {
+    .service-section {
+        margin: 0% !important;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }

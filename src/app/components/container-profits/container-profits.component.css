@@ -11,10 +11,10 @@ i{
     font-size: 2rem;
 }
 .div-profits{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     grid-gap: 2px;
-    grid-template-rows: auto;
 }
 .container-border{
     display: flex;
@@ -28,13 +28,43 @@ i{
 .profit{
     background: linear-gradient(to right,  #FFDE59, #FFDE10);
     padding: 0.7rem;
+    width: 30%;
 }
 .profit:hover{
     background: linear-gradient(to right,  #FFDC10, #FFDE10);
     transition: background 1000ms ease;
 }
+@media screen and (max-width: 992px) {
+    .div-profits{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+        grid-gap: 2px;
+        justify-content: none;
+        grid-template-rows: auto;
+    }
+    .profit{
+        width: 100%;
+    }
+}
 @media screen and (max-width:768px) {
  .h2-profits{
     font-size: 2.3rem;
  }   
+}
+@media screen and (max-width:350px) {
+
+    .h2-profits{
+        font-size: 2rem;
+     }
+}
+@media screen and (max-width:250px) {
+    .div-profits{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+        grid-gap: 2px;
+        grid-template-rows: auto;
+    }
+    .h2-profits{
+        font-size: 1.5rem;
+     }
 }

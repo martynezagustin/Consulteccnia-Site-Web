@@ -36,3 +36,8 @@ hr{
     background-color: #FEEE10!important;
     transition: .2s all;
 }
+@media screen and (max-width: 260px) {
+  .row{
+    grid-template-columns: repeat(auto-fill, minmax(210px,1fr));
+  }  
+}

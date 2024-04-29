@@ -16,8 +16,10 @@ export class BusinessTrustComponent {
     this.business.setBusiness(businessToAdd)
   }
   ngOnInit(){
-    this.setBusiness("Philio Sin Gracia", "../../../assets/imgs/philio-sin-gracia.png", "https://philiosingracia.empretienda.com.ar/")
     this.listBusiness = this.business.getBusiness()
+    if(this.listBusiness.length === 0){
+      this.setBusiness("Philio Sin Gracia", "../../../assets/imgs/philio-sin-gracia.png", "https://philiosingracia.empretienda.com.ar/")
+    }
   }
   getBusiness(){
     this.listBusiness = this.business.getBusiness()

@@ -63,5 +63,14 @@ i{
 @media screen and (max-width:768px){
     .row{
         flex-direction: column!important;
+        margin: 10px;
+    }
+    .plan-col{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .row{
+        margin: 5px;
     }
 }

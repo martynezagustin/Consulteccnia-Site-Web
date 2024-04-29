@@ -44,3 +44,8 @@ a:hover{
 hr{
     color: whitesmoke;
 }
+@media screen and (max-width: 350px) {
+    .section-home__div h3{
+        font-size: 1rem;
+    }
+}
